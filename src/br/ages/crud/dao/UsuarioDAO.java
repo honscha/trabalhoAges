@@ -170,4 +170,12 @@ public class UsuarioDAO {
 			}
 		}
 	}
+
+	public DateFormat getDateFormat() {
+		return dateFormat;
+	}
+
+	public void setDateFormat(DateFormat dateFormat) {
+		this.dateFormat = dateFormat;
+	}
 }

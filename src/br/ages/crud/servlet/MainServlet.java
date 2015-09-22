@@ -10,13 +10,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import br.ages.crud.command.AddUserCommand;
+
+//import br.ages.crud.command.AddUserCommand;
 import br.ages.crud.command.Command;
 import br.ages.crud.command.CreateScreenUserCommand;
 import br.ages.crud.command.ListUserCommand;
+//import br.ages.crud.command.ListUserCommand;
 import br.ages.crud.command.LoginCommand;
 import br.ages.crud.command.LogoutCommand;
-import br.ages.crud.command.RemoveUserCommand;
+//import br.ages.crud.command.RemoveUserCommand;
 
 @WebServlet("/main")
 public class MainServlet extends HttpServlet {
@@ -28,9 +30,9 @@ public class MainServlet extends HttpServlet {
 	public void init() throws ServletException {
 		comandos.put("login", new LoginCommand());
 		comandos.put("logout", new LogoutCommand());
-		comandos.put("telaUser", new CreateScreenUserCommand());
-		comandos.put("addUser", new AddUserCommand());
-		comandos.put("removerUsuario", new RemoveUserCommand());
+//		comandos.put("telaUser", new CreateScreenUserCommand());
+//		comandos.put("addUser", new AddUserCommand());
+	//	comandos.put("removerUsuario", new RemoveUserCommand());
 		comandos.put("listUser", new ListUserCommand());
 	}
 
