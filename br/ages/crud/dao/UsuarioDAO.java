@@ -147,7 +147,7 @@ public class UsuarioDAO {
 	 * @param idPessoa
 	 * @throws PersistenciaException
 	 */
-	public boolean removerUsuario(Integer idUsuario) throws PersistenciaException {
+	public void removerUsuario(Integer idUsuario) throws PersistenciaException {
 		Connection conexao = null;
 		try {
 			conexao = ConexaoUtil.getConexao();
@@ -169,14 +169,5 @@ public class UsuarioDAO {
 				e.printStackTrace();
 			}
 		}
-		return true;
-	}
-
-	public DateFormat getDateFormat() {
-		return dateFormat;
-	}
-
-	public void setDateFormat(DateFormat dateFormat) {
-		this.dateFormat = dateFormat;
 	}
 }

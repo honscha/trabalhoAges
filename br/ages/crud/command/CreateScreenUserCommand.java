@@ -15,7 +15,7 @@ public class CreateScreenUserCommand implements Command {
 	public String execute(HttpServletRequest request) throws SQLException {
 
 		cadastroDao = new UsuarioDAO();
-		try {
+		
 		// Verifica se abre tela edição de pessoa ou de adição de pessoa.
 		String isEdit = request.getParameter("isEdit");
 		if (isEdit != null && !"".equals(isEdit)) {
@@ -23,7 +23,7 @@ public class CreateScreenUserCommand implements Command {
 		} else {
 			proxima = "user/addUser.jsp";
 		}
-		
+		try {
 
 
 		} catch (Exception e) {

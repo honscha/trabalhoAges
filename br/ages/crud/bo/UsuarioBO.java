@@ -61,9 +61,5 @@ public class UsuarioBO implements Serializable {
 		usuarioDAO.cadastrarUsuario(usuarioDTO);
 	}
 	
-	public boolean removerUsuario(int idUsuario) throws PersistenciaException, SQLException, ParseException {
-		return usuarioDAO.removerUsuario(idUsuario);
 	}
-
-}
 
